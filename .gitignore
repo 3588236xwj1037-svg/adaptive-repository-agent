@@ -3,8 +3,9 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
-.streamlit/secrets.toml
-.streamlit/secrets.*.toml
+# Local secrets (never commit, regardless of directory)
+secrets.toml
+secrets.*.toml
 .streamlit/*.log
 .env
 .env.*
