@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible defect in Adaptive Repository Agent.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include API keys, private repository content, or credentials.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and why it is unexpected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include commands, non-sensitive inputs, and the selected pytest target.
+      placeholder: |
+        1. uv sync --all-groups
+        2. uv run streamlit run app.py
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Python and project version
+      placeholder: Python 3.11, Adaptive Repository Agent 0.1.0
+    validations:
+      required: true

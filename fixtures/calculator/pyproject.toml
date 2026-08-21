@@ -1,0 +1,7 @@
+[project]
+name = "calculator-fixture"
+version = "0.0.0"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
